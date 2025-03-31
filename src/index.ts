@@ -23,6 +23,12 @@ export function add(numbers: string): number {
   // Split numbers using the determined delimiter
   const numList = numbers.split(delimiter).map(n => Number(n));
 
+  const negativeNums = numList.filter(num => num < 0);
+
+  if (negativeNums.length) {
+    throw new Error(`negative numbers not allowed ${negativeNums.join(',')}`);
+  }
+
   const result = numList.reduce((total, num) => total + num, 0);
 
   return result;

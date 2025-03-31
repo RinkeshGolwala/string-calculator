@@ -48,16 +48,16 @@ describe('Add function for delimited strings', () => {
   });
 })
 
-xdescribe('Add function for negative numbers', () => {
+describe('Add function for negative numbers', () => {
   it('should throw an exception with one negative number', () => {
     const negativeNum = faker.number.int({ min: -100, max: -1 });
     const positiveNum = faker.number.int({ min: 1, max: 100 });
-    expect(() => add(`${negativeNum},${positiveNum}`)).toThrow(`negatives not allowed ${negativeNum}`);
+    expect(() => add(`${negativeNum},${positiveNum}`)).toThrow(`negative numbers not allowed ${negativeNum}`);
   });
 
   it('should throw an exception with list of negative numbers', () => {
     const negativeNumbers = Array.from({ length: 3 }, () => faker.number.int({ min: -50, max: -1 }));
-    expect(() => add(negativeNumbers.join(','))).toThrow(`negatives not allowed ${negativeNumbers.join(',')}`);
+    expect(() => add(negativeNumbers.join(','))).toThrow(`negative numbers not allowed ${negativeNumbers.join(',')}`);
   });
 })
 
