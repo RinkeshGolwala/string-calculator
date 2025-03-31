@@ -1,0 +1,17 @@
+{
+  "name": "string-calculator",
+  "version": "1.0.0",
+  "description": "The `add` function is used to add integers inside the string.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Rinkesh Golwala",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.0",
+    "typescript": "^5.8.2"
+  }
+}
