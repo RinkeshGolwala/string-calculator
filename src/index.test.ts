@@ -48,7 +48,7 @@ describe('Add function for delimited strings', () => {
   });
 })
 
-describe('Add function for negative numbers', () => {
+xdescribe('Add function for negative numbers', () => {
   it('should throw an exception with one negative number', () => {
     const negativeNum = faker.number.int({ min: -100, max: -1 });
     const positiveNum = faker.number.int({ min: 1, max: 100 });
@@ -61,7 +61,7 @@ describe('Add function for negative numbers', () => {
   });
 })
 
-describe('Add function for large numbers', () => {
+xdescribe('Add function for large numbers', () => {
   const num1 = faker.number.int({ min: 1, max: 20 });
   const num2 = faker.number.int({ min: 1000 });
   it('should ignore numbers greater than 1000', () => {

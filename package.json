@@ -4,7 +4,8 @@
   "description": "The `add` function is used to add integers inside the string.",
   "main": "index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "Rinkesh Golwala",
   "license": "ISC",
