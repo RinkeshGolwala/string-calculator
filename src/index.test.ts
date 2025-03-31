@@ -61,7 +61,7 @@ describe('Add function for negative numbers', () => {
   });
 })
 
-xdescribe('Add function for large numbers', () => {
+describe('Add function for large numbers', () => {
   const num1 = faker.number.int({ min: 1, max: 20 });
   const num2 = faker.number.int({ min: 1000 });
   it('should ignore numbers greater than 1000', () => {

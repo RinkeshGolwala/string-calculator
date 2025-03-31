@@ -21,7 +21,7 @@ export function add(numbers: string): number {
   }
 
   // Split numbers using the determined delimiter
-  const numList = numbers.split(delimiter).map(n => Number(n));
+  const numList = numbers.split(delimiter).map(n => Number(n)).filter(n => n <= 1000);
 
   const negativeNums = numList.filter(num => num < 0);
 
